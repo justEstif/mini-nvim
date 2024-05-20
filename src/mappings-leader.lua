@@ -6,11 +6,6 @@ _G.Config.leader_group_clues = {
 	},
 	{
 		mode = "n",
-		keys = "<Leader>g",
-		desc = "+Git",
-	},
-	{
-		mode = "n",
 		keys = "<Leader>b",
 		desc = "+Buffers",
 	},
@@ -18,11 +13,6 @@ _G.Config.leader_group_clues = {
 		mode = "n",
 		keys = "<Leader>l",
 		desc = "+Lsp",
-	},
-	{
-		mode = "n",
-		keys = "<Leader>t",
-		desc = "+Toggle",
 	},
 }
 
