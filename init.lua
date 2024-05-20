@@ -105,8 +105,13 @@ end)
 
 -- Theme
 now(function()
-	add("catppuccin/nvim")
+	add("folke/tokyonight.nvim")
 	source("theme.lua")
+end)
+
+later(function()
+	add("lewis6991/gitsigns.nvim")
+	require("gitsigns").setup()
 end)
 
 -- Tree-sitter: advanced syntax parsing, highlighting, and text objects

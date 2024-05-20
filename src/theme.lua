@@ -1,21 +1,10 @@
-local catppuccin = require("catppuccin")
+local theme = require("tokyonight")
 
-catppuccin.setup({
-	integrations = {
-		markdown = true,
-		mason = true,
-		treesitter = true,
-		mini = { enabled = true },
-		native_lsp = {
-			enabled = true,
-			underlines = {
-				errors = { "undercurl" },
-				hints = { "undercurl" },
-				warnings = { "undercurl" },
-				information = { "undercurl" },
-			},
-		},
+theme.setup({
+	styles = {
+		comments = { italic = false },
+		keywords = { italic = false },
 	},
 })
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("tokyonight")
