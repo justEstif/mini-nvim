@@ -35,10 +35,7 @@ now(function()
 	source("mappings-leader.lua")
 end)
 
-add({
-	name = "mini.nvim",
-	checkout = "HEAD",
-})
+add({ name = "mini.nvim" })
 
 now(function()
 	require("mini.statusline").setup()
@@ -111,11 +108,6 @@ now(function()
 	add("folke/tokyonight.nvim")
 	source("theme.lua")
 end)
-
--- later(function()
--- 	add("lewis6991/gitsigns.nvim")
--- 	require("gitsigns").setup()
--- end)
 
 -- Tree-sitter: advanced syntax parsing, highlighting, and text objects
 later(function()
